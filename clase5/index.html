@@ -1,74 +1,98 @@
-
 <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>clase5</title>
+</head>
+<body>
+   <h1>SOLICITUD DE ADOPCIÓN</h1>
+   <Fieldset>
+      <label> Informaci&oacute; personal
+         <br>
+         <br>
+         <form>
+            <label>Nombre*</label>
+            <input type="text" name="Nombre" placeholder="Pepe">
+            <label>Apellido*</label>
+            <input type="text" name="Apellido" placeholder="Suarez">
+            <br>
+            <label>Dirección de email*</label>
+            <input type="email" name="email" placeholder="juanp95@gmail.com">
+            <br>
+            <label>Nro de documento*</label>
+            <input type="text" name="Nro de documento" placeholder="xxx.xxx.xxx">
+            <br> 
+            <label>Mascotas</label>
+            <br>
+            <span>SI</span>
+            <input type="radio" name="Mascotas" value="SI"> 
+            <span>NO</span>
+            <input type="radio" name="Mascotas" value="NO" checked> 
+            <br>
+            <label>Cantidad de Mascotas</label>
+            <input type="number" min="1" max="5">
+            <br>
+            <label>La mayoría de ellos son</label>
+            <select>
+               <option value="0"></option>
+               <option value="1">Perro</option>
+               <option value="2">Gato</option>
+               <option value="3">Rana</option>
+               <option value="4">Serpiente</option>
+               <option value="4">Conejo</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="ENVIAR">
+         
+         </form>
+      </label>
+   </fieldset>
 
-<html lang="es">  <!----etiqueta de apertura-->
- <head>
+   <br>
+   <br>
+
+   <fieldset>
+      <legend>Formulario con tabla</legend>
+      <form action="../clase4/index.html" method="POST">
+         <table>
+            <tr>
+               <td colspan="2">
+                     <label>Correo electrónico</label><br>
+                     <input type="email" name="email" placeholder="abc.@gmail.com">
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label>Nombre</label><br>
+                  <input type="text" name="nombre" maxlength="5" placeholder="Pepe">
+               </td>
+
+               <td>
+                     <label>Apellido</label><br>
+                     <input type="text" name="apellido" placeholder="Perez">
+               </td>
+            </tr>
+               
+            <tr>
+               <td>
+                  <label>Nro de documento</label><br>
+                  <input type="number" name="dni" min="0" max="99999999">
+               </td>
+            </tr>
+
+               <tr>
+                <td>
+                  <input type="submit" value="Guardar">
+                </td>  
+               </tr>
+
     
-    <title>
-        clase3 - HTML
-    </title>
-    
-     <meta charset="utf-8">
- </head>
-
-    <body>
-
-     <h1>Zlatna Vallejos</h1>  <!--Nombre y apellido-->
-            <!--Etiqueta para escribir un parrafo-->
-            <p>Los lenguajes de programación son:</p>
-
-         <!---Lista sin orden-->
-        <ul>
-            <li> Java </li>
-            <li> Ruby </li>
-            <li> Go </li>
-        </ul> 
-    
-     <!--Etiqueta para escribir un parrafo-->
-     <p>Y sus posiciones son:</p>
-
-       <!--Listas ordenadas-->
-        <ol>
-            <li> primer </li>
-            <li> segundo </li>
-            <li> tercer </li>
-        </ol>
-        
-        <!--imagen relativa-->
-        <img src="Simpson.jpg" alt = "Los simpson" width = "150">
-
-        <br>
-        <!--imagen absoluta-->
-        <img src="https://picsum.photos/200/300?grayscale">
-        </br>
-
-        <!--imagen con enlaces-->
-        <a href="https://picsum.photos/200/300?grayscale" target="_blank"> Ver imagen </a>
-        
-        <!--Etiquetas básicas-->
-        <hr> <!--Da un salto pero también agrega una linea divisoria-->
-
-        <b> C# </b> <!--Para oscurecer el texto-->
-
-        <!--Etiqueta para resaltar algo-->
-        <mark>Java</mark>
-    
-          <!--Etiqueta para subrayar algo-->
-        <ins>Go</ins> 
-
-          <!--Etiqueta para achicar un texto-->
-          <small>primer</small>
-
-          <!--Etiqueta para tachar un texto-->
-          <del>tercer</del>
-
-         <!--Etiqueta para poner un texto "arriba", como un super indice-->  
-        <sup>ZLATINA</sup>
-
-        <!--Etiqueta para poner un texto "abajo"-->
-         <sub> VALLEJULIS </sub>
+         </table>
+      </form>
+   </fieldset>
 
 
-
-    </body>
+</body>
 </html>
