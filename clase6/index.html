@@ -15,21 +15,53 @@
             <legend>
                 Alta de Usuario
             </legend>
-          <form action="AltaDeUsuario.html">
-            <input type="file" name="dni-frente" >
+          <form action="AltaDeUsuario.html" method="posts">
+            <input type="file" name="dni-frente">
             <input type="hidden" value="valoroculto" name="campoHidden">
             
             <input type="url" name="url" required placeholder="http://domino.com.ar">
             <input type="text" name="nombre" required placeholder="Ingrese su nombre">
 
-            <input type="text" placeholder="Ingrese valores del 0 - 9" required pattern="[0-9]" title="Solo mumeros del 0 al 9">            <input type="submit"  value="enviar">
+            <input type="text" placeholder="Ingrese valores del 0 - 9" required pattern="[0-9]" title="Solo mumeros del 0 al 9">            
+            <br>
+            
+            <textarea name="inform extra" cols="50" rows="5"></textarea>
+            <br>
+
+            <select name="selectMultiple" multiple required>
+               <optgroup label="Animales">
+                   <option>León</option>
+                   <option>Tigre</option>
+               </optgroup>
+               <optgroup label="Colores">
+                <option>Rojo</option>
+                <option>Verde</option>
+                <option>Amarillo</option>
+               </optgroup>
+            </select>
+            <br>
+
+            <br>
+            <input list="Browser" name="dataBrowser">
+            <datalist id="Browser">
+                <option>Edge</option>
+                <option>Chrome</option>
+                <option>Firefox</option>
+                <option>Opera</option>
+            </datalist>
+            <br>
+            <br>
+            <label for="buscar">Tipo search</label>
+            <input type="search" name="buscar" id="buscar">
+
+            <input type="submit"  value="enviar">
+            
+
           </form>
         </fieldset>
 
-
-            
-        
-      </section>
+       
+         </section>
     
     </main>
 
